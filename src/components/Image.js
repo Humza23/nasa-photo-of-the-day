@@ -1,9 +1,10 @@
 import React from 'react'
 
-const Image = ({image}) => {
+const Image = (props) => {
+    const {image} = props
     return (
         <div>
-            <img src={image}/>
+            <img src={image.url}/>
         </div>
     )
 }

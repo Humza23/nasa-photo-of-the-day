@@ -1,11 +1,11 @@
 import React from 'react'
 import Image from './Image.js'
 
-const Body = ({image}) => {
-
+const Body = (props) => {
+const {image} = props
     return (
         <div>
-            <img src={image}/>
+            <img src={image.url}/>
         </div>
     )
 }
