@@ -1,10 +1,17 @@
 import React from 'react'
+import styled from 'styled-components'
+
+const StyledHeader = styled.h1`
+    color: red;
+    font-size: 5rem;
+`
+
 
 const Header = (props) => {
     const {title} = props
     return (
         <div>
-            <h1 style={{color: 'blue', fontSize: '4rem'}}> {title.title}</h1>
+            <StyledHeader> {title.title}</StyledHeader>
         </div>
     )
 }
