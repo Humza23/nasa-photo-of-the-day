@@ -4,7 +4,6 @@ import styled from 'styled-components'
 
 const StyledH2 = styled.h2`
     border: 8px solid red;
-    width: 50%;
     padding: 1rem;
     display: flex;
     justify-content: center;

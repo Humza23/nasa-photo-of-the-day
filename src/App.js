@@ -4,6 +4,7 @@ import "./App.css";
 import Header from './components/Header.js'
 import Body from './components/Body.js'
 import Footer from './components/Footer.js'
+import Theme from './components/Theme.js'
 
 function App() {
   const [nasaData, setNasaData] = useState([])
@@ -21,11 +22,11 @@ function App() {
   }, [])
 
   return (
-    <div className="App">
+    <Theme>
       <Header title={nasaData} />
       <Body image={nasaData}/>
       <Footer name='Page created by: Humza Malik' />
-    </div>
+    </Theme>
   );
 }
 
